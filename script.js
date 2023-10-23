@@ -56,7 +56,7 @@ function getColor(vote){        // 평점에 따른 색상 변경 함수
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const searchTerm = search.value.split('').reduce((a,c) => {
-    if(!c) return a;
+    if(c === '') return a;
     return a + c;
     },'')
 
