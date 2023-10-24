@@ -81,3 +81,18 @@ letter-spacing: 0.5px;
 .movie-info span.red{
   color: red;
 }
+
+.overview{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  padding: 1rem;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in;
+}
+
+.movie:hover .overview{
+transform: translateY(0);
+}
